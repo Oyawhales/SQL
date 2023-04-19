@@ -1,2 +1,2 @@
 # Data-Exploration-in-SQL
-This house all SQL queries and Data exploration Projects 
+This houses all SQL queries and Data exploration Projects 
