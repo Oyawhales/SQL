@@ -1,6 +1,7 @@
 use sql_store; -- This highlight the database meaning ready/prepare the sql_store database  for use. In summary, callup the database 
 select * from sql_store.customers;  -- select all field from the customers table; one of table making up the sql_store database  
 
+-- Order by
 SELECT * 
 FROM customers 
 ORDER BY state DESC, first_name; 
