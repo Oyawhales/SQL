@@ -63,7 +63,8 @@ LIMIT 3;
 
 SELECT * 
 FROM orders  
-JOIN customers ON orders.customer_id = customers.customer_id
+JOIN customers 
+	ON orders.customer_id = customers.customer_id
 LIMIT 4; 
 
 -- You can also relate return all the fields from both the order and customers table with the customer_id as intersection (ON as the intersection; where the 
