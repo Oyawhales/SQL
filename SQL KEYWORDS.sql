@@ -110,7 +110,7 @@ JOIN sql_inventory.products  p
 	 ON oi.product_id = p.product_id; 
 
 -- Method2 : The product table is access thru the use method in the inventory 
-use sql_inventory;
+use sql_inventory; -- inventory table already called up, so there isnt need to write sql_inventory.products but rather access the table
 SELECT * 
 FROM sql_store.order_items oi   -- access the table thru the database  
 JOIN products  p
