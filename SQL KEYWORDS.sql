@@ -4,7 +4,7 @@ select * from sql_store.customers;  -- select all field from the customers table
 -- Order by
 SELECT * 
 FROM customers 
-ORDER BY state DESC, first_name; 
+ORDER BY state DESC; 
 
 -- Return fields with order_id = 2 and order by the multiplication of the unit price and the quantity 
 SELECT * 
