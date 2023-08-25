@@ -64,6 +64,7 @@ LIMIT 3;
 SELECT * 
 FROM orders  
 JOIN customers 
+	
 	ON orders.customer_id = customers.customer_id
 LIMIT 4; 
 
