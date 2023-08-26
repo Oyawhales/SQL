@@ -7,6 +7,11 @@ SELECT *
 FROM customers 
 WHERE first_name REGEXP  "elka|ambur"; 
 
+-- First name are elka or ambur and based on the case; here lower case 
+SELECT * 
+FROM customers 
+WHERE first_name REGEXP BINARY "elka|ambur"; 
+
 -- Last name ends with EY or ON 
 SELECT * 
 FROM customers 
