@@ -12,6 +12,14 @@ SELECT *
 FROM customers 
 WHERE first_name REGEXP BINARY "elka|ambur"; 
 
+-- ^ indicates the start of the string.
+-- B matches the literal letter "B".
+-- [A-Za-z] matches any single alphabetical character (uppercase or lowercase) following the "B".
+SELECT * 
+FROM customers 
+WHERE last_name REGEXP '^B[A-Za-z]';
+
+
 -- Last name ends with EY or ON 
 SELECT * 
 FROM customers 
@@ -31,13 +39,17 @@ WHERE last_name LIKE  "EY$" OR  "ON$";
 
 -- point takes a constatnt value of 10  
 SELECT first_name, last_name, 10 AS points
-FROM customers 
-WHERE points LIKE  2273;
+FROM customers;
 
 -- select all records with points as 2273
 SELECT *
 FROM customers 
 WHERE points LIKE  2273; 
+
+-- select all records with points as 2273
+SELECT *
+FROM customers 
+WHERE points = 2273; 
 
 
 
