@@ -7,6 +7,12 @@ SELECT *
 FROM customers 
 WHERE first_name REGEXP  "elka|ambur"; 
 
+--- Contains any lower or uppercase single letter
+SELECT *
+FROM customers
+WHERE first_name REGEXP '[A-Za-z]elka$';
+
+
 -- First name are elka or ambur and based on the case; here lower case 
 SELECT * 
 FROM customers 
@@ -58,6 +64,7 @@ SELECT *
 FROM customers 
 WHERE last_name REGEXP   "B[RU]"; 
 
+--- contains br or bu 
 SELECT * 
 FROM customers 
 WHERE last_name REGEXP   "br|bu"; 
