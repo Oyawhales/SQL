@@ -2,7 +2,7 @@ use sql_store; -- This highlight the database meaning ready/prepare the sql_stor
 select * from sql_store.customers;  -- select all field from the customers table; one of table making up the sql_store database 
 
 
--- First name are elka or ambur 
+-- First name contain elka or ambur 
 SELECT * 
 FROM customers 
 WHERE first_name REGEXP  "elka|ambur"; 
